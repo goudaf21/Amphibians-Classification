@@ -4,7 +4,7 @@ Final project for cs 297a under Profess Cody Watson
 The data used in this project can be found at: https://archive.ics.uci.edu/ml/datasets/Amphibians
 
 # EDA
-Upon reading the data from the csv, we first transformed the column names from their longhand form into shorthand form for simplification of later tasks. We then specified the classification columns to mutate later and one-hot encoded all of the categorical variables (see feature key below). In order to deal with the 7-label classification we created a 7-digit binary value to represent every permutation of animals then created a mapping to turn the binary into a single value. We were unsure if this was the best approach and would like to meet with you at some point to go over what the best way might be to handle the 7-label classifier both in our training as well as our predictions. 
+Upon reading the data from the csv, we first transformed the column names from their longhand form into shorthand form for simplification of later tasks. We then specified the classification columns to mutate later and one-hot encoded all of the categorical variables (see feature key below). In order to deal with the 7-label classification we created a 7-digit binary value to represent every permutation of animals then created a mapping to turn the binary into a single value. 
 
 To standardize the data, we used a simple Standard Scaler as we have no metric to measure the efficacy of the scaler until we introduce the presence of a classifier. When we do start implementing classifiers, we will test out all of the types of scalers and study the effect on the classifier. We then split the data at a standard 80/20 train/test split and output the original size of the x_train.
 
